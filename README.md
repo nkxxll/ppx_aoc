@@ -54,5 +54,14 @@ and never the whole repeating matching logic.
 
 ```ocaml
 (* structure for aoc setup *)
+type aoc_func = unit -> int
+type aoc = {
+  summary: string;
+  days: {
+    day1: aoc_func * aoc_func;
+    day2: aoc_func * aoc_func;
+    day3: aoc_func * aoc_func;
+  };
+}
 [@@ deriving aoccli]
 ```
