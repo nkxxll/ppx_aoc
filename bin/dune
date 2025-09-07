@@ -2,4 +2,5 @@
  (public_name ppx_aoc)
  (name main)
  (libraries ppx_aoc)
- (preprocess (pps ppx_aoc))
+ (preprocess
+  (pps ppx_aoc)))
